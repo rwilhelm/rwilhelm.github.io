@@ -1,0 +1,15 @@
+body {
+	margin: 48px 24px;
+	padding: 12px 24px;
+	font-family: 'Monaco', sans-serif;
+	font-size: 113%;
+	line-height: 1.3em;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
