@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
 
-    <!-- <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" /> -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" />
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet_rene.css" media="screen" />
@@ -22,22 +22,40 @@
 
   <body ng-controller='appCtrl'>
 
-    <div class="pure-g">
-        <div class="pure-u-4-24">
+    <div class="container">
+      <div class="pure-g">
+
+        <div class="pure-u-2-24">
+          <div class="menu">
+
             <ul>
               <li><a href="#/">home</a></li>
-              <li><a href="#/asdf">asdf</a></li>
-              <li><a href="#/qwer">qwer</a></li>
-              <li><a href="#/wsad">wsad</a></li>
-              <li><a href="#/hjkl">hjkl</a></li>
-              <li><a href="#/uiop">uiop</a></li>
             </ul>
+
+            <ul>
+              <li><a href="#/about">about</a></li>
+              <li><a href="#/contact">contact</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#/code">code</a></li>
+              <li><a href="#/img">pictures</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#/stats">stats</a></li>
+            </ul>
+
           </div>
         </div>
 
-        <div class="pure-u-20-24">
-          <div ng-view></div>
+        <div class="pure-u-22-24">
+          <div class="main">
+            <div ng-view></div>
+          </div>
         </div>
+
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular-route.min.js"></script>
