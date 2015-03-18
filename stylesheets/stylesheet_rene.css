@@ -43,3 +43,7 @@ a:hover {
 .main {
 	padding: 4px;
 }
+
+a {
+  transition: .5s;
+}
