@@ -1,46 +1,119 @@
 <!DOCTYPE html>
-<html ng-app='app'>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" /> -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css" />
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet_rene.css" media="screen" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <title>rené</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rwilhelm.github.io</title>
+
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        ul {
+            padding: 0px 24px;
+        }
+
+        body {
+            margin: 32px;
+            font-family: 'Sigmar One';
+            font-size: 130%;
+            margin: 8px;
+            padding: 128px;
+            text-align: right;
+            background-color: rgb(84, 115, 202);
+            color: white;
+            line-height: 500%;
+        }
+
+        a {
+            text-decoration: none;
+            /*color: #333;*/
+            border-bottom: 32px solid rgb(79, 55, 95);
+        }
+
+        a:hover {
+            color: rgb(255, 226, 216);
+        }
+
+        pre {
+            color: rgb(189, 139, 110)
+        }
+
+        li {
+            list-style-type: none;
+            font-family: 'Monda';
+            font-size: 160%;
+
+        }
+
+        h1 {
+            font-size: 15rem;
+        }
+
+        h2 {
+            margin-top: 3em;
+        }
+
+        #dim {
+            display: table;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('landingpagepic.jpg');
+            background-position: center top;
+            height: 350px;
+        }
+
+        .inverted-bar {
+            position: relative;
+        }
+
+        .inverted-bar:before,
+        .inverted-bar:after {
+            padding: 10px 0;
+            text-indent: 10px;
+            position: absolute;
+            white-space: nowrap;
+            overflow: hidden;
+            content: attr(data-content);
+        }
+
+        .inverted-bar:before {
+            background-color: aqua;
+            color: red;
+            width: 100%;
+        }
+
+        .inverted-bar:after {
+            background-color: red;
+            color: aqua;
+            width: 20%;
+        }
+    </style>
+
 </head>
 
-<body ng-controller='appCtrl'>
-    <div class="container">
-        <div class="pure-g">
-            <div class="pure-u-2-24">
-                <div class="menu">
-                    <a href="https://github.com/rwilhelm">github</a> <a href="https://gist.github.com/rwilhelm">gists</a>
-                </div>
-            </div>
-            <div class="pure-u-22-24">
-                <div class="main">
-                    <div ng-view></div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Hi! You can contact me at rxw1<AT>pm<DOT>me. -->
 
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-6352978-9");
-        pageTracker._trackPageview();
-    } catch (err) {}
-    </script>
+<body>
+    <u>
+        <li>
+            <a href="https://github.com/rwilhelm">github.com/rwilhelm</a>
+        </li>
+        <!-- <li>
+            <a href="https://gist.github.com/rwilhelm">gist.github.com/rwilhelm</a>
+        </li> -->
+        <li>
+            <a href="https://git.sr.ht/~rxw">git.sr.ht/~rxw</a>
+        </li>
+        <!-- <li>
+            <a href="http://userpages.uni-koblenz.de/~asdf">userpages.uni-koblenz.de/~asdf</a>
+        </li> -->
+        <li>
+            <pre>GPG 653E 4DC2 EA20 13F1 A55B BC4D 96D3 926D BE9A DFA5</pre>
+        </li>
+    </u>
 </body>
 
 </html>
