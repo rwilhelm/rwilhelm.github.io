@@ -22,15 +22,21 @@
             font-size: 130%;
             margin: 8px;
             padding: 128px;
-            text-align: right;
             background-color: rgb(84, 115, 202);
             color: white;
             line-height: 500%;
+            background: linear-gradient(90deg, rgba(98,134,235,1) 0%, rgba(84,115,202,1) 100%);
         }
 
         a {
             text-decoration: none;
-            /*color: #333;*/
+        }
+
+        #left a {
+            border-bottom: 32px solid rgb(42, 80, 151)
+        }
+
+        #right a {
             border-bottom: 32px solid rgb(79, 55, 95);
         }
 
@@ -46,49 +52,26 @@
             list-style-type: none;
             font-family: 'Monda';
             font-size: 160%;
-
         }
 
-        h1 {
-            font-size: 15rem;
+        #wrapper {
+            display: flex;
         }
 
-        h2 {
-            margin-top: 3em;
+        #left {
+            text-align: left;
+            flex: 1;
+            /* flex: 0 0 65%; */
         }
 
-        #dim {
-            display: table;
-            width: 100%;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('landingpagepic.jpg');
-            background-position: center top;
-            height: 350px;
+        #right {
+            text-align: right;
+            flex: 1;
         }
 
-        .inverted-bar {
-            position: relative;
-        }
-
-        .inverted-bar:before,
-        .inverted-bar:after {
-            padding: 10px 0;
-            text-indent: 10px;
-            position: absolute;
-            white-space: nowrap;
-            overflow: hidden;
-            content: attr(data-content);
-        }
-
-        .inverted-bar:before {
-            background-color: aqua;
-            color: red;
-            width: 100%;
-        }
-
-        .inverted-bar:after {
-            background-color: red;
-            color: aqua;
-            width: 20%;
+        pre {
+            line-height: 1em;
+            margin-top: 5em;
         }
     </style>
 
@@ -97,29 +80,47 @@
 <!-- Hi! You can contact me at rxw1<AT>pm<DOT>me. -->
 
 <body>
-    <ul>
-        <li>
-            <a href="https://git.sr.ht/~rxw">git.sr.ht/~rxw</a>
-        </li>
-        <li>
-            <a href="https://github.com/rwilhelm">github.com/rwilhelm</a>
-        </li>
-        <!-- <li>
-            <a href="https://gist.github.com/rwilhelm">gist.github.com/rwilhelm</a>
-        </li> -->
-        <li>
-            <a href="https://bl.ocks.org/rwilhelm">bl.ocks.org/rwilhelm</a>
-        </li>
-        <li>
-            <a href="https://stackoverflow.com/users/220472/rxw">stackoverflow</a>
-        </li>
-        <!-- <li>
-            <a href="http://userpages.uni-koblenz.de/~asdf">userpages.uni-koblenz.de/~asdf</a>
-        </li> -->
-        <li>
-            <pre>GPG 653E 4DC2 EA20 13F1 A55B BC4D 96D3 926D BE9A DFA5</pre>
-        </li>
-    </ul>
+
+    <div id="wrapper">
+        <div id="left">
+            <ul>
+                <li>
+                    <a href="http://46.101.107.25/map">deutschland map viz</a>
+                </li>
+                <li>
+                    <a href="http://46.101.107.25/timeline2">timeline2 &lt;--</a>
+                </li>
+                <li>
+                    <a href="http://46.101.107.25/timeline">timeline1</a>
+                </li>
+                <li>
+                    <a href="http://46.101.107.25/spinoza">spinoza</a>
+                </li>
+                <li>
+                    <a href="https://github.com/rwilhelm/bar">lemonbar wrapper</a>
+                </li>
+            </ul>
+        </div>
+        <div id="right">
+            <ul>
+                <li>
+                    <a href="https://git.sr.ht/~rxw">git.sr.ht/~rxw</a>
+                </li>
+                <li>
+                    <a href="https://github.com/rwilhelm">github.com/rwilhelm</a>
+                </li>
+                <li>
+                    <a href="https://bl.ocks.org/rwilhelm">bl.ocks.org/rwilhelm</a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/220472/rxw">stackoverflow</a>
+                </li>
+                <li>
+                    <pre>GPG 653E 4DC2 EA20 13F1 A55B<br />BC4D 96D3 926D BE9A DFA5</pre>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
